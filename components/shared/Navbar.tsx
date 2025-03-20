@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="mx-24 my-6 flex items-center justify-between max-md:hidden">
+    <nav className="background-light900_dark200 flex items-center justify-between px-24 py-6 max-md:hidden">
       <Link href="/">
         <h1 className="h1-bold">Ishan Veer</h1>
       </Link>
