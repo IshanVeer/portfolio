@@ -8,14 +8,14 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="mx-24 my-6 flex items-center justify-between">
+    <nav className="mx-24 my-6 flex items-center justify-between max-md:hidden">
       <Link href="/">
-        <h1 className="h1-bold">Ishan</h1>
+        <h1 className="h1-bold">Ishan Veer</h1>
       </Link>
       {/* links and theme */}
       <div className="flex items-center justify-between gap-10">
         {/* links */}
-        <ul className="base-medium flex items-center justify-between gap-6">
+        <ul className="base-medium text-dark400_light700 flex items-center justify-between gap-6">
           {navLinks.map((link) => (
             <li
               className="transition duration-75 hover:text-gray-600"
