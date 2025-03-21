@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @import url("../styles/theme.css");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Inter", sans-serif;

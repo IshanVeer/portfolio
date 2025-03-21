@@ -104,7 +104,10 @@ export default function Home() {
         </ul>
       </section>
       {/* Experience Section */}
-      <section className="background-light900_dark100 px-24 py-12 text-center max-md:px-12 max-md:py-6">
+      <section
+        id="about"
+        className="background-light900_dark100 px-24 py-12 text-center max-md:px-12 max-md:py-6"
+      >
         <Badge
           variant="outline"
           className="background-light700_dark400 base-medium mt-6"
@@ -121,7 +124,10 @@ export default function Home() {
         </div>
       </section>
       {/* Work Section */}
-      <section className="background-light800_dark200 px-24 py-12 text-center max-md:px-12 max-md:py-6">
+      <section
+        id="work"
+        className="background-light800_dark200 px-24 py-12 text-center max-md:px-12 max-md:py-6"
+      >
         <Badge
           variant="outline"
           className="background-light700_dark400 base-medium mt-6"
@@ -138,7 +144,10 @@ export default function Home() {
         </div>
       </section>
       {/* contact section */}
-      <section className="background-light900_dark100 px-24 py-12 text-center max-md:px-12 max-md:py-6">
+      <section
+        id="contact"
+        className="background-light900_dark100 px-24 py-12 text-center max-md:px-12 max-md:py-6"
+      >
         <Badge
           variant="outline"
           className="background-light700_dark400 base-medium mt-6"
