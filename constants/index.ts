@@ -62,6 +62,24 @@ export const workProjects = [
     link: "https://omnifood-app-project.netlify.app/",
     github: "https://github.com/IshanVeer/Omnifood-Project",
   },
+  {
+    index: 3,
+    title: "Lift Simulator",
+    description: "A basic lift simulator made using vanilla javascript",
+    tags: ["HTML", "CSS", "Javascript"],
+    image: "/assets/images/lift-simulator.png",
+    link: "https://lift-simulation-rho-three.vercel.app/",
+    github: "https://github.com/IshanVeer/lift-simulation",
+  },
+  {
+    index: 4,
+    title: "Expense Tracker",
+    description: "A basic expense tracker app",
+    tags: ["HTML", "CSS", "Javascript", "React"],
+    image: "/assets/images/expense-tracker.png",
+    link: "https://expense-tracker-demo-app.netlify.app/",
+    github: "https://github.com/IshanVeer/Expense-Tracker",
+  },
 ];
 export const workExperience = [
   {

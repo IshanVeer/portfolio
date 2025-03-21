@@ -126,7 +126,7 @@ export default function Home() {
       {/* Work Section */}
       <section
         id="work"
-        className="background-light800_dark200 px-24 py-12 text-center max-md:px-12 max-md:py-6"
+        className="background-light800_dark200 px-24 py-16 text-center max-md:px-12 max-md:py-6"
       >
         <Badge
           variant="outline"
@@ -137,7 +137,7 @@ export default function Home() {
         <p className="base-medium text-dark300_light700 my-6">
           Some of the noteworthy projects I have built:{" "}
         </p>
-        <div className="flex gap-4 max-md:flex-col">
+        <div className="grid grid-cols-3 gap-5 max-md:flex max-md:flex-col">
           {workProjects.map((project) => (
             <WorkCard key={project.index} project={project} />
           ))}
