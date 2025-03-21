@@ -1,6 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+
 import { Badge } from "@/components/ui/badge";
 interface Props {
   index: number;
@@ -17,7 +18,7 @@ interface QuestionProps {
 
 const WorkCard = ({ project }: QuestionProps) => {
   return (
-    <div className="flex w-full flex-col gap-8   items-center shadow-md rounded-md border light-border background-light900_dark300 ">
+    <div className="light-border background-light900_dark300 flex w-full   flex-col items-center gap-8 rounded-md border shadow-md ">
       <div className="w-full">
         <Image
           src={project.image}
@@ -28,18 +29,18 @@ const WorkCard = ({ project }: QuestionProps) => {
         />
       </div>
 
-      <div className="flex gap-2 p-3  items-center flex-col ">
+      <div className="flex flex-col items-center  gap-2 p-3 ">
         <h2 className="h3-semibold">{project.title}</h2>
         <p className="paragraph-regular mb-3">{project.description}</p>
         <div>
           {project.tags.map((tag) => (
-            <Badge className="py-1 px-2 m-1" variant="outline" key={tag}>
+            <Badge className="m-1 px-2 py-1" variant="outline" key={tag}>
               {tag}
             </Badge>
           ))}
         </div>
 
-        <div className="flex my-3 items-center gap-4">
+        <div className="my-3 flex items-center gap-4">
           <Link href={project.link}>
             <Image
               src="/assets/icons/link.svg"

@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import ExperienceCard from "@/components/card/ExperienceCard";
+import WorkCard from "@/components/card/WorkCard";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import { Badge } from "@/components/ui/badge";
-import { socialLinks, techSkills, workProjects } from "@/constants";
-import WorkCard from "@/components/card/WorkCard";
-import { link } from "fs";
+import {
+  socialLinks,
+  techSkills,
+  workExperience,
+  workProjects,
+} from "@/constants";
 
 export default function Home() {
   return (
@@ -109,6 +114,11 @@ export default function Home() {
         <p className="base-medium text-dark300_light700 my-6">
           Here is a quick summary of my most recent experiences:{" "}
         </p>
+        <div className="flex flex-col gap-5">
+          {workExperience.map((experience) => (
+            <ExperienceCard key={experience.index} experience={experience} />
+          ))}
+        </div>
       </section>
       {/* Work Section */}
       <section className="background-light800_dark200 px-24 py-12 text-center max-md:px-12 max-md:py-6">
@@ -126,6 +136,58 @@ export default function Home() {
             <WorkCard key={project.index} project={project} />
           ))}
         </div>
+      </section>
+      {/* contact section */}
+      <section className="background-light900_dark100 px-24 py-12 text-center max-md:px-12 max-md:py-6">
+        <Badge
+          variant="outline"
+          className="background-light700_dark400 base-medium mt-6"
+        >
+          Get In Touch
+        </Badge>
+
+        <p className="base-medium text-dark300_light700 mx-auto my-6 w-1/2 max-md:w-full">
+          What&apos;s next? Feel free to reach out to me if you&apos;re looking
+          for a developer, have a query, or simply want to connect.
+        </p>
+        {/* email */}
+        <div className="my-4 flex justify-center gap-4">
+          <Image
+            src="/assets/icons/mail.svg"
+            width={20}
+            height={20}
+            alt="mail"
+          />
+          <h3 className="h2-bold">ishanveerwork@gmail.com</h3>
+        </div>
+        {/* call */}
+        <div className="flex justify-center gap-4">
+          <Image
+            src="/assets/icons/phone.svg"
+            width={20}
+            height={20}
+            alt="phone"
+          />
+          <h3 className="h2-bold">+91 9152491730</h3>
+        </div>
+        <p className="paragraph-regular text-dark500_light700 mb-3 mt-12">
+          You may also find me on these platforms!
+        </p>
+        <ul className=" flex items-center justify-center gap-2">
+          {socialLinks.map((link) => (
+            <li key={link.label}>
+              <Link href={link.route}>
+                <Image
+                  src={link.image}
+                  height={20}
+                  width={20}
+                  alt={link.label}
+                  className="dark:invert"
+                />{" "}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

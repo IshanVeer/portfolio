@@ -63,3 +63,41 @@ export const workProjects = [
     github: "https://github.com/IshanVeer/Omnifood-Project",
   },
 ];
+export const workExperience = [
+  {
+    index: 1,
+    company: "RealDev Squad",
+    logo: "/assets/images/rds-logo.png",
+    title: "Open Source Contributor",
+    duration: "Aug 2024 - Dec 2024",
+    description:
+      "Fixed UI issues, adding pagination to the user list. Setup the backend manage pagination.",
+  },
+  {
+    index: 2,
+    company: "Scaleup Consulting",
+    logo: "/assets/images/scaleup-logo.webp",
+    title: "Software Engineer",
+    duration: "Mar 2023 - Oct 2024",
+    description:
+      "Engineered a real-time sports betting application, leveraging Next.js and Material UI for the front-end and Firebase for backend operations. Developed a cross-platform web application using Next.js and Capacitor, seamlessly integrating web and native functionalities.",
+  },
+  {
+    index: 3,
+    company: "Savvy ESC",
+    logo: "/assets/images/savvy-logo.png",
+    title: "Freelance Frontend Developer",
+    duration: "Feb 2024 - Apr 2024",
+    description:
+      "Developed a web application for creating Erosion and Sediment Control (ESC) plansbased on land contours. Integrated Google Maps API with drawing tools for site mapping and boundary creation.",
+  },
+  {
+    index: 4,
+    company: "Meiyo",
+    logo: "/assets/images/meiyo-logo.png",
+    title: "Freelance Frontend Developer",
+    duration: "June 2023 - August 2023",
+    description:
+      "Contributed to the development of a gaming metaverse and ecosystem platform. Created a feature for exclusive listings, which have a lower commission (5% instead of 10%). These listings need approval before they can be posted.",
+  },
+];
