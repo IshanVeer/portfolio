@@ -11,10 +11,10 @@ export default function Home() {
       <Navbar />
       <MobileNav />
       {/* Hero section */}
-      <section className="background-light900_dark200 flex items-center justify-between px-24 py-6  ">
-        <div className="flex w-2/3 flex-col">
-          <div className="flex items-start gap-4">
-            <h1 className="text-dark400_light700 my-6 text-5xl font-bold">
+      <section className="background-light900_dark200 flex items-center justify-between px-24 py-6 max-md:flex-col-reverse max-md:px-12 max-md:py-6  ">
+        <div className="flex flex-col items-start md:w-2/3">
+          <div className="flex items-start gap-4 max-md:items-center">
+            <h1 className="text-dark400_light700 my-6 text-5xl font-bold max-md:text-2xl">
               Hi,I&apos;m Ishan
             </h1>
             <Image
@@ -22,7 +22,7 @@ export default function Home() {
               height={80}
               width={80}
               alt="hi"
-              className=""
+              className="max-md:size-14"
             />
           </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className="w-1/4 rounded-full shadow-sm">
+        <div className="w-1/4 rounded-full shadow-sm max-md:w-full">
           <Image
             src="/assets/images/hero-image.jpeg"
             height={160}
