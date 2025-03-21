@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 
 const MobileNav = () => {
   return (
-    <nav className="background-light900_dark200 flex justify-between px-12 py-6 md:hidden">
+    <nav className="background-light900_dark100 flex justify-between px-12 py-6 md:hidden">
       <Link href="/">
         <h1 className="h2-bold">Ishan Veer</h1>
       </Link>

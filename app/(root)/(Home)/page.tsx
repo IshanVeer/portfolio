@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
-import { socialLinks } from "@/constants";
+import { Badge } from "@/components/ui/badge";
+import { socialLinks, techSkills } from "@/constants";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Navbar />
       <MobileNav />
       {/* Hero section */}
-      <section className="background-light900_dark200 flex items-center justify-between px-24 py-6 max-md:flex-col-reverse max-md:px-12 max-md:py-6  ">
+      <section className="background-light900_dark100 flex items-center justify-between px-24 py-12 max-md:flex-col-reverse max-md:px-12 max-md:py-6  ">
         <div className="flex flex-col items-start md:w-2/3">
           <div className="flex items-start gap-4 max-md:items-center">
             <h1 className="text-dark400_light700 my-6 text-5xl font-bold max-md:text-2xl">
@@ -69,6 +70,31 @@ export default function Home() {
             className="w-full  rounded-sm object-cover"
           />
         </div>
+      </section>
+      {/* Skills Section */}
+      <section className="background-light800_dark200 px-24 py-12 text-center max-md:px-12 max-md:py-6">
+        <Badge
+          variant="outline"
+          className="background-light700_dark400 base-medium mt-6"
+        >
+          Skills
+        </Badge>
+        <p className="base-medium my-6">
+          The skills, tools and technologies I am really good at:
+        </p>
+        <ul className="mt-14 grid grid-cols-5 gap-y-16 max-md:grid-cols-3 max-md:gap-x-12">
+          {techSkills.map((skill) => (
+            <li key={skill.label} className="flex flex-col items-center gap-4">
+              <Image
+                src={skill.image}
+                height={40}
+                width={40}
+                alt={skill.label}
+              />
+              <p>{skill.label}</p>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

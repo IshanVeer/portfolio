@@ -20,3 +20,15 @@ export const socialLinks = [
     label: "linkdein",
   },
 ];
+export const techSkills = [
+  { label: "JavaScript", image: "/assets/icons/javascript.svg" },
+  { label: "TypeScript", image: "/assets/icons/typescript.svg" },
+  { label: "React.js", image: "/assets/icons/react.svg" },
+  { label: "Next.js", image: "/assets/icons/next.svg" },
+  { label: "Node.js", image: "/assets/icons/node.svg" },
+  { label: "Express.js", image: "/assets/icons/express.svg" },
+  { label: "MongoDB", image: "/assets/icons/mongoDB.svg" },
+  { label: "Tailwindcss", image: "/assets/icons/tailwind.svg" },
+  { label: "Git", image: "/assets/icons/git.svg" },
+  { label: "Firebase", image: "/assets/icons/firebase.svg" },
+];
