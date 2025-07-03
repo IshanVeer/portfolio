@@ -80,6 +80,16 @@ export const workProjects = [
     link: "https://expense-tracker-demo-app.netlify.app/",
     github: "https://github.com/IshanVeer/Expense-Tracker",
   },
+  {
+    index: 5,
+    title: "Kanban Task Management App",
+    description:
+      "A task management app which helps you plan, organise and ideate your tasks effectively and efficiently.",
+    tags: ["HTML", "CSS", "Javascript", "React"],
+    image: "/assets/images/kanban-task-management-app.png",
+    link: "https://task-management-app-kohl-xi.vercel.app",
+    github: "https://github.com/IshanVeer/task-management-app",
+  },
 ];
 export const workExperience = [
   {
