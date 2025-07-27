@@ -32,7 +32,7 @@ export default function Home() {
                 Hi,I&apos;m Ishan
               </h1>
               <h3 className="text-dark400_light700 my-6 text-2xl font-bold max-md:text-xl">
-                I build User interfaces and web applications
+                I build user interfaces and web applications
               </h3>
             </div>
 
