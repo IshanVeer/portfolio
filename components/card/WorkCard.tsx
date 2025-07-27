@@ -19,13 +19,13 @@ interface QuestionProps {
 const WorkCard = ({ project }: QuestionProps) => {
   return (
     <div className="light-border background-light900_dark300 flex w-full flex-col   items-center gap-8 overflow-hidden rounded-md border shadow-md ">
-      <div className="w-full ">
+      <div className="h-[250px] w-full">
         <Image
           src={project.image}
           height={200}
           width={200}
           alt={project.title}
-          className="w-full  object-cover"
+          className="size-full object-cover"
         />
       </div>
 

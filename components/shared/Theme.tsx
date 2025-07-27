@@ -17,7 +17,7 @@ const Theme = () => {
         <Button
           className=""
           variant="ghost"
-          onChange={() => {
+          onClick={() => {
             setMode("dark");
           }}
         >

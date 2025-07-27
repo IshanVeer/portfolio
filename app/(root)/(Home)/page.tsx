@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +14,10 @@ import {
   workProjects,
 } from "@/constants";
 
+const ModelViewer = dynamic(() => import("@/components/shared/ModelViewer"), {
+  ssr: false,
+});
+
 export default function Home() {
   return (
     <div>
@@ -22,15 +27,31 @@ export default function Home() {
       <section className="background-light900_dark100 flex items-center justify-between px-24 py-12 max-md:flex-col-reverse max-md:px-12 max-md:py-6  ">
         <div className="flex flex-col items-start md:w-2/3">
           <div className="flex items-start gap-4 max-md:items-center">
-            <h1 className="text-dark400_light700 my-6 text-5xl font-bold max-md:text-2xl">
-              Hi,I&apos;m Ishan
-            </h1>
+            <div>
+              <h1 className="text-dark400_light700 my-6 text-5xl font-bold max-md:text-2xl">
+                Hi,I&apos;m Ishan
+              </h1>
+              <h3 className="text-dark400_light700 my-6 text-2xl font-bold max-md:text-2xl">
+                I build User interfaces and web applications
+              </h3>
+            </div>
+
             <Image
               src="/assets/icons/waving-hand-emoji.svg"
               height={80}
               width={80}
               alt="hi"
               className="max-md:size-14"
+            />
+          </div>
+          <div>
+            <ModelViewer
+              src="/assets/models/my-scene/scene.gltf"
+              alt="3D model"
+              auto-rotate
+              camera-controls
+              ar
+              style={{ width: "500px", height: "500px" }}
             />
           </div>
 
