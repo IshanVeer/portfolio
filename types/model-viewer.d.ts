@@ -10,7 +10,8 @@ declare namespace JSX {
       "camera-controls"?: boolean;
       ar?: boolean;
       style?: React.CSSProperties;
-      [key: string]: any;
+
+      [key: string]: unknown;
     };
   }
 }

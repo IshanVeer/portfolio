@@ -24,14 +24,14 @@ export default function Home() {
       <Navbar />
       <MobileNav />
       {/* Hero section */}
-      <section className="background-light900_dark100 flex items-center justify-between px-24 py-12 max-md:flex-col-reverse max-md:px-12 max-md:py-6  ">
+      <section className="background-light900_dark100 px-24 py-12 max-md:px-12 max-md:py-6  ">
         <div className="flex flex-col items-start md:w-2/3">
-          <div className="flex items-start gap-4 max-md:items-center">
+          <div className="flex items-start justify-between gap-4">
             <div>
               <h1 className="text-dark400_light700 my-6 text-5xl font-bold max-md:text-2xl">
                 Hi,I&apos;m Ishan
               </h1>
-              <h3 className="text-dark400_light700 my-6 text-2xl font-bold max-md:text-2xl">
+              <h3 className="text-dark400_light700 my-6 text-2xl font-bold max-md:text-xl">
                 I build User interfaces and web applications
               </h3>
             </div>
@@ -41,17 +41,20 @@ export default function Home() {
               height={80}
               width={80}
               alt="hi"
-              className="max-md:size-14"
+              className="max-md:my-4 max-md:size-14"
             />
           </div>
           <div>
             <ModelViewer
               src="/assets/models/my-scene/scene.gltf"
               alt="3D model"
-              auto-rotate
               camera-controls
-              ar
-              style={{ width: "500px", height: "500px" }}
+              rotation-per-second="10deg"
+              min-camera-orbit="auto 90deg auto"
+              max-camera-orbit="auto 90deg auto"
+              camera-orbit="0deg 90deg 2m"
+              disable-zoom
+              className="mx-auto block aspect-[2/1] h-auto w-[900px] max-md:w-[600px]"
             />
           </div>
 
@@ -88,15 +91,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="w-1/4 rounded-full shadow-sm max-md:w-full">
-          <Image
-            src="/assets/images/hero-image.jpeg"
-            height={160}
-            width={160}
-            alt="hero-image"
-            className="w-full  rounded-sm object-cover"
-          />
         </div>
       </section>
       {/* Skills Section */}

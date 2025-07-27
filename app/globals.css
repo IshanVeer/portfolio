@@ -10,6 +10,11 @@ html {
 body {
   font-family: "Inter", sans-serif;
 }
+@layer base {
+  model-viewer {
+    @apply block w-[900px] h-auto aspect-[2/1] max-md:w-[300px];
+  }
+}
 
 @layer utilities {
   .flex-center {
